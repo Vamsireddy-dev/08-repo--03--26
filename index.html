@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untold Words</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- PASSWORD SCREEN -->
+<div id="lockScreen">
+    <div class="lockBox">
+        <h2>Private Letter</h2>
+        <p>Enter password to continue</p>
+
+        <input type="password" id="passwordInput" placeholder="Password">
+        <button onclick="checkPassword()">Enter</button>
+
+        <p id="errorMsg"></p>
+    </div>
+</div>
+
+
+<!-- WEBSITE -->
+<div id="website" style="display:none;">
+
+    <!-- INTRO -->
+    <div id="intro">
+        <div class="envelope" onclick="openLetter()">
+            <p>Open Letter</p>
+        </div>
+    </div>
+
+
+    <!-- MAIN CONTENT (ONLY ONE) -->
+    <div id="content" style="display:none;">
+
+        <audio id="bgMusic" loop>
+            <source src="bgm.mp3" type="audio/mp3">
+        </audio>
+
+        <button id="musicBtn" onclick="toggleMusic()">🔊</button>
+
+
+        <section class="hero">
+            <h1 id="typing"></h1>
+        </section>
+<hr>
+        <section class="section hidden">
+            <h2>Our Story</h2>
+            <p>
+                Some feelings take time to understand.
+                Distance made me realize how important you became in my life.
+            </p>
+        </section>
+        <hr>
+
+        <section class="section hidden">
+            <h2>What I Couldn't Say</h2>
+            <p>
+                I was never good at expressing emotions clearly,
+                but everything I felt was always genuine.
+            </p>
+        </section>
+        <hr>
+
+        <section class="section hidden">
+    <h2>Special Moment</h2>
+    <p>
+        I still remember that day at the ISKCON Temple,  
+        when the songs of Krishna Radharani were sung.  
+        At that very moment, I felt like I wanted to propose to you,   
+        but I didn’t.  <br>
+
+    </p>
+</section>
+<hr>
+        <section class="section hidden">
+            <h2>One Thing I Wanted To Ask</h2>
+            <p class="question">
+                How do you truly see us now?
+                (nuvu eppudu mana relation ni ela chusthunav)<br>
+                - Answer through Call or Text
+            </p>
+        </section>
+        <hr>
+            <section class="section hidden">
+    <h2>Something I Need To Ask</h2>
+    <p>
+        Vyshu, after all that has happened, I just want to know something honestly:  
+        Do you still want me in your life now?  
+        (nuvu ippudu naa tho undalanukuntunnava?)<br>
+        -- Answer through Call or Text
+    </p>
+</section>
+<hr>
+        <section class="section hidden">
+    <h2>Finally...</h2>
+    <p>
+        Vyshu, I know I have done a lot of cringe and maybe even toxic things,  
+        and I’m really sorry for all of that.  
+        I never meant to hurt you.  
+        I also remember the moments we hugged and I kissed you —  
+        they were genuine, and I hope you felt the care behind them.  
+        I just want you to know that everything I felt was true.  
+        I’ve always cared about you, and I always will.
+    </p>
+    <p class="sign">— Vamsi.Karna</p>
+    <p>Made with @Love <br>08-03-2026 </p>
+</section>
+    </div>
+
+</div>
+
+<script type="module" src="index.js"></script>
+
+</body>
+</html>
