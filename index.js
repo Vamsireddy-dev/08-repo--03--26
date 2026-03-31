@@ -1,13 +1,18 @@
 
+
 window.checkPassword = function() {
-    const correctPassword = "040705";
+    const correctPassword = "vyshvam";
     const entered = document.getElementById("passwordInput").value;
 
     if (entered === correctPassword) {
         document.getElementById("lockScreen").style.display = "none";
         document.getElementById("website").style.display = "block";
-    } else {
-        document.getElementById("errorMsg").innerText = "Wrong password";
+    } 
+    else if (entered === "040705") {
+        document.getElementById("errorMsg").innerText = " - This is not the password, but I appreciate your effort. please Don't try again";
+    }
+    else {
+        document.getElementById("errorMsg").innerText = " - Incorrect password. Please Don't try again.";
     }
 };
 
